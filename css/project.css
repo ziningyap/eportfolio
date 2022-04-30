@@ -1,0 +1,93 @@
+.main {
+	width: 100%;
+	margin-left: 5%;
+}
+
+.proj-container {
+}
+
+.proj-content {
+width: min(80%, 600px);
+padding-right: 5%;
+display: block;
+float: left;
+}
+
+.proj-title {
+	margin: 0;
+	margin-top: 2%;
+}
+
+.proj-liner {
+	margin: 0;
+ 	color:var(--clr-golden);
+}
+.proj-collab {
+	color: #8F8F8F;
+}
+
+.proj-vid {
+	width: min(80%, 600px);
+	height: 400px;
+	float: left;
+	margin-bottom: 5%
+}
+
+.gallery-container {
+	margin: 2% 0;
+	width: 85%;
+}
+
+#caption {
+	    font-family: "Open Sans", sans-serif;
+}
+
+#img {
+	width: 100%;
+	height: 500px;
+	background-image: url("https://i.ibb.co/597Szt8/track-1.jpg");
+	background-size: contain;
+	text-align: center;
+	margin-bottom: 2%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+}
+
+.add-info {
+	width: min(80%, 600px);
+}
+
+.my-contribution, .skills-used {
+	border-top: 1px solid #8F8F8F;
+	width: 45%;
+	padding-right: 5%; 
+	float: left;
+}
+
+.skills-used {
+	width: 40%;
+	padding-right: 0: 
+}
+
+.proj-content h3,.add-info h3 {
+	color:var(--clr-golden);
+	font-size: 1rem;
+}
+
+#left, #right {
+float: right;
+padding: 0% 1%; 
+transition-duration: 0.3s;
+cursor: pointer;
+}
+
+#left:hover, #right:hover {
+background-color: var(--clr-golden);
+}
+
+#left h1, #right h1 {
+margin: 0;
+color: black;
+}
+
