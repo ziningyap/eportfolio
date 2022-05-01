@@ -3,19 +3,24 @@
   --clr-green: #3d8447;
 }
 
-;
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(191, 20, 20);
-  height: 100%;
-  overflow: hidden;
+  background: rgb(255,226,158);
+  background: radial-gradient(rgba(226,186,93,1), white);
+  height: 100vh;
+  width: 100vw;
   font-size: 16px;
+  text-align: center;
+  color: black;
 }
 
 .main {
-  text-align: center;
-  position:absolute;
-  top: 50%;
+  width: 100%;
+  padding-top: 30%;
 }
