@@ -12,7 +12,6 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(255,226,158);
-  background: radial-gradient(rgba(226,186,93,1), white);
   height: 100vh;
   width: 100vw;
   font-size: 16px;
@@ -31,7 +30,9 @@ body {
 
 .main {
   width: 100%;
+  padding: 5%;
   padding-top: 20%;
+  height: 100%;
 }
 
 h1 {
