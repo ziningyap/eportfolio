@@ -158,6 +158,8 @@ h1 {
   
   .topnav .icon {
 	display: none;
+	font-size: 30px;
+	color: var(--clr-golden);
   }
   
   @media screen and (max-width: 600px) {
