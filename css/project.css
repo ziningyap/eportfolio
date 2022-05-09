@@ -9,18 +9,16 @@ margin: 0;
 padding: 0;
 }
 
-footer {
-	position: fixed;
-	right: 5%;
-	top: 5%;
-	width: 100%;
-	text-align: right;
-	color: var(--clr-golden);
+#name {
+	float: left;
+	padding-left: 5%;
+	padding-top: 1%;
+	font-family: "Syne", sans-serif;
+	color: var(--clr-green);
+	margin: 0;
 }
 
-footer a {
-	color: var(--clr-golden);
-}
+
 
 @media only screen and (max-width: 800px) {
 	div.my-contribution{
@@ -33,10 +31,11 @@ footer a {
 	span.quicknav {
 		display: block;
 	}
+
   }
 
 h1 {
-	font-family: "Syne", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 	font-size: 3rem;
 	color:var(--clr-golden);
@@ -44,7 +43,7 @@ h1 {
   
   h2 {
 	 font-family: "Open Sans", sans-serif;
-	font-size: 2rem; 
+	font-size: 1.5rem; 
   }
   
   h3 {
@@ -62,7 +61,8 @@ h1 {
   #resume {
 	position: absolute;
 	width: 80%;
-	padding-left:7%;
+	padding-left:10%;
+	padding-top: 3%;
 	}
 
 	#resume h1 {
@@ -107,7 +107,7 @@ h1 {
 	  
 	  .quicknav a {
 		 text-decoration: none; 
-		 color: black;
+		 color: var(--clr-green);
 	  }
 	  
 	  .quicknav a:hover {
@@ -131,24 +131,25 @@ h1 {
 
   .topnav {
 	overflow: hidden;
-	padding: 1%;
+	padding: 2%;
   }
   
   .topnav a {
-	float: left;
+	float: right;
 	display: block;
-	color: black;
+	color: var(--clr-green);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 16px;
 	border-bottom: 1px solid white;
+	background-color: white;
   }
   
   .topnav a:hover {
 	  transition-duration: 0.3s;
 	  transition-timing-function: ease-in-out;
-	  border-bottom: 1px solid black;
+	  border-bottom: 1px solid var(--clr-green);;
   }
   
   .topnav a.active {
@@ -167,6 +168,10 @@ h1 {
 	.topnav a.icon {
 	  float: right;
 	  display: block;
+	}
+
+	.hideName {
+		display:none;
 	}
   }
   

@@ -37,7 +37,9 @@ function showMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
+      document.querySelector("#name").className += "hideName"
     } else {
       x.className = "topnav";
+      document.querySelector("#name").className = ""
     }
   }
