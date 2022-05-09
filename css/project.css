@@ -163,7 +163,7 @@ h1 {
 	color: var(--clr-golden);
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
 	.topnav a {display: none;}
 	.topnav a.icon {
 	  float: right;
@@ -175,7 +175,7 @@ h1 {
 	}
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
 	.topnav.responsive {position: relative;}
 	.topnav.responsive .icon {
 	  position: absolute;
