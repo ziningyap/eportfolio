@@ -16,6 +16,10 @@ padding: 0;
 	div.skills-used {
 		width: 100%;
 	}
+
+	span.quicknav {
+		display: block;
+	}
   }
 
 h1 {
@@ -71,6 +75,7 @@ h1 {
 	  }
 
 	  .quicknav {
+		display: inline-block;
 		margin-top:0;
 		margin-right: 20px;
 		font-family: "Syne", sans-serif;
