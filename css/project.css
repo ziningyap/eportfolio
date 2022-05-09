@@ -66,7 +66,12 @@ h1 {
 	}
 
 	#resume h1 {
+		margin-bottom: 0;
+	}
+
+	#resume-content p {
 		margin: 0;
+		margin-top: 10px;
 	}
 
 	#button {
@@ -89,6 +94,8 @@ h1 {
 	  
 	  .detail {
 		display: none;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
 	  }
 
 	  .quicknav {
