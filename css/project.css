@@ -9,6 +9,15 @@ margin: 0;
 padding: 0;
 }
 
+@media only screen and (max-width: 800px) {
+	div.my-contribution{
+		width: 100%;
+	}
+	div.skills-used {
+		width: 100%;
+	}
+  }
+
 h1 {
 	font-family: "Syne", sans-serif;
 	font-weight: 700;
@@ -146,13 +155,13 @@ padding-left: 2%;
 	background-color: black;
 }
 
-.add-info {
+/* .add-info {
 	width: min(100%, 800px);
 	position: relative;
-}
+} */
 
 .my-contribution, .skills-used{
-	width: min(100%, 350px);
+	width: 330px;
 	float: left;
 }
 
