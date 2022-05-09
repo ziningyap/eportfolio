@@ -107,7 +107,7 @@ h1 {
 	  
 	  .quicknav a {
 		 text-decoration: none; 
-		 color: var(--clr-green);
+		 color: black;
 	  }
 	  
 	  .quicknav a:hover {
