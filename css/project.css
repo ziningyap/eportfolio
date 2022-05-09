@@ -254,8 +254,8 @@ padding-left: 2%;
 	text-align: center;
 	margin-bottom: 2%;
 	background-repeat: no-repeat;
-	background-position: center;
-	background-color: black;
+	background-position: left;
+	background-color: rgb(255, 255, 255);
 }
 
 /* .add-info {
@@ -278,4 +278,8 @@ padding-left: 2%;
 padding-right: 5px;
 transition-duration: 0.3s;
 cursor: pointer;
+}
+
+.keyword {
+	padding-right: 1rem;
 }
