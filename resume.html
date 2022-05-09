@@ -1,116 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>About Me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="css/project.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="project.js"></script>
 
-  </head>
+<head>
+	<meta charset="utf-8">
+	<title>About Me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="project.js"></script>
+
+</head>
 
 <body>
 	<div class="topnav" id="myTopnav">
 		<a href="index.html">Home</a>
 		<a class="active" href="resume.html">Resume</a>
 		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Get in touch</a>
+		<a href="mailto:zining_yap@outlook.com">Get in touch</a>
 		<a href="javascript:void(0);" class="icon" onclick="showMenu()">
 			<i class="fa fa-bars"></i>
-	  </a>
+		</a>
 		</ul>
+	</div>
+	<div class="welcome-header" id="resume">
+		<h1>Resume</h1>
+		<p>Email: <a href="mailto:zining_yap@outlook.com">zining_yap@outlook.com</a></p>
+		<p><span class="quicknav">Quick Access:</span><span class="quicknav"><a href="#work-intern">Work/
+					Internship</a></span><span class="quicknav"><a href="#education">Education</a></span><span
+				class="quicknav"><a href="#skills">Skills</a></span><span class="quicknav"><a
+					href="#achieve">Achievements</a></span></p>
+		<button id="button" onclick="showDetails()">Show Details</button>
+		<div id="resume-content">
+			<h2 id="work-intern">Work/ Internship</h2>
+			<p class="year">Mar 2018 – Sep 2018</p>
+			<p><b>Marketing Assistant & Freelance Graphic Designer</b></br>Singapore Symphony Group</p>
+			<ul class="detail">
+				<li>Conceptualised and designed standee banners, programme booklet, lanyard, fan for 1 concert and 2
+					events</li>
+				<li>Designed visuals for digital platforms</li>
+				<li>Assisted with marketing campaigns and data entry</li>
+				<li>Produced video content for social media</li>
+			</ul>
+			<p class="year">Jan 2021 – Jul 2021</p>
+			<p><b>UI/UX Intern</b></br>Academia Pte Ltd</p>
+			<ul class="detail">
+				<li>Created >10 interactive content on their learning management system using HTML, CSS, Javascrip</li>
+				<li>Developed an FAQ bot on the cloud communications platform</li>
+				<li>Catalysed the company’s utilization of customer relationship management (CRM) system</li>
+				<li>Planned user flow and rectified UX/UI issues for the website’s customer and e-commerce sectio</li>
+			</ul>
+			<p class="year">May 2020 – Aug 2020</p>
+			<p><b>Creative Services Intern</b></br>National Library Board, Public Libraries Singapore (PLS)</p>
+			<ul class="detail">
+				<li>Initiated “Casually Drawn Synopsis” series on PLS Instagram</li>
+				<li>Produced 1 engagement campaign “5 Days of Nostalgia” for National Day</li>
+				<li>Visual Branding and post-production assistance for “Book It Out” video series on PLS Youtube and
+					Facebook</li>
+				<li>Designed 2 zoom backgrounds for GoLibrary programmes</li>
+			</ul>
+			<h2 id="education">Education</h2>
+			<p class="year">2018 – 2022</p>
+			<p><b>Bachelor of Arts in Industrial Design</b></br>
+				National University of Singapore - School of Design and Environment</p>
+			<p class="year">2015 – 2018</p>
+			<p><b>Diploma in Arts Business Management</b></br>
+				Ngee Ann Polytechnic – School of Humanities and Social Science</p>
+
+			</br>
+
+			<h3>School-related Experience</h3>
+			<p><b>Project Assistant </b></br>DID Design Platform Archive (2021)</p>
+			<ul class="detail">
+				<li>Front end development of archive website</li>
+				<li>Compiled 3 years worth of design projects for archive</li>
+			</ul>
+
+			<p><b>Student Researcher</b></br>Keio-NUS CUTE Center (2020)</p>
+			<ul class="detail">
+				<li>Researched and ideated on the gamification of the shoulder pulley exercise for elderly
+					rehabilitation</li>
+				<li>Prototyped with Arduino and Micro:bit</li>
+				<li>Modelled shoulder pulley handles using CAD</li>
+			</ul>
+
+			<p><b>Publicity Head</b></br>Community Service Club Day (2018)</p>
+			<ul class="detail">
+				<li>Led a team of 3 to publicise and design for event</li>
+				<li>Designed t-shirts, tote bag, banner, site decoration</li>
+				<li>Managed social media accounts (Facebook & Instagram)</li>
+			</ul>
+
+			<h2 id="skills">Skills</h2>
+			<p><b>UI/UX, Motion design, Graphic design, Layout design, Video Editing</b></br>Software: Adobe Photoshop,
+				Illustrator, After Effects, XD, InDesign, Premiere Pro, Figma</p>
+			<p><b>Front-end development</b></br>HTML, CSS, JavaScript</p>
+			<p><b>3D CAD and Rendering</b><br>Software: Rhinoceros 3D, Keyshot</p>
+
+			<p>Certificate in Human-Computer Interaction | edX | Georgia Institute of Technology</br>Proficient in
+				English and Chinese</p>
+			<h2 id="achieve">Achievements</h2>
+			<p>Golden Pin Concept Design Award (2020)</br>Dean’s List, NUS School of Design & Environment (2019/2020)
+			</p>
 		</div>
-<div class = "welcome-header" id="resume">
-	<h1>Resume</h1>
-<p><span class="quicknav">Quick Access:</span><span  class="quicknav"><a href="#work-intern">Work/ Internship</a></span><span class="quicknav"><a href="#education">Education</a></span><span class="quicknav"><a href="#skills">Skills</a></span><span class="quicknav"><a href="#achieve">Achievements</a></span></p>
-	<button id="button" onclick="showDetails()">Show Details</button>
-<div id="resume-content">
-	<h2 id="work-intern">Work/ Internship</h2>
-	<p class="year">Mar 2018 – Sep 2018</p>
-	<p><b>Marketing Assistant & Freelance Graphic Designer</b></br>Singapore Symphony Group</p>
-	<ul class="detail">
-		<li>Conceptualised and designed standee banners, programme booklet, lanyard, fan for 1 concert and 2 events</li>
-		<li>Designed visuals for digital platforms</li>
-		<li>Assisted with marketing campaigns and data entry</li>
-		<li>Produced video content for social media</li>
-	</ul>
-	<p class="year">Jan 2021 – Jul 2021</p>
-	<p><b>UI/UX Intern</b></br>Academia Pte Ltd</p>
-	<ul class="detail">
-		<li>Created >10 interactive content on their learning management system using HTML, CSS, Javascrip</li>
-		<li>Developed an FAQ bot on the cloud communications platform</li>
-		<li>Catalysed the company’s utilization of customer relationship management (CRM) system</li>
-		<li>Planned user flow and rectified UX/UI issues for the website’s customer and e-commerce sectio</li>
-	</ul>
-	<p class="year">May 2020 – Aug 2020</p>
-	<p><b>Creative Services Intern</b></br>National Library Board, Public Libraries Singapore (PLS)</p>
-	<ul class="detail">
-		<li>Initiated “Casually Drawn Synopsis” series on PLS Instagram</li>
-		<li>Produced 1 engagement campaign “5 Days of Nostalgia” for National Day</li>
-		<li>Visual Branding and post-production assistance for “Book It Out” video series on PLS Youtube and Facebook</li>
-		<li>Designed 2 zoom backgrounds for GoLibrary programmes</li>
-	</ul>
-	<h2 id="education">Education</h2>
-	<p class="year">2018 – 2022</p>
-	<p><b>Bachelor of Arts in Industrial Design</b></br>
-National University of Singapore - School of Design and Environment</p>
-<p class="year">2015 – 2018</p>
-	<p><b>Diploma in Arts Business Management</b></br>
-Ngee Ann Polytechnic – School of Humanities and Social Science</p>
-
-</br>
-
-<h3>School-related Experience</h3>
-<p><b>Project Assistant </b></br>DID Design Platform Archive (2021)</p>
-<ul class="detail">
-	<li>Front end development of archive website</li>
-	<li>Compiled 3 years worth of design projects for archive</li>
-</ul>
-
-<p><b>Student Researcher</b></br>Keio-NUS CUTE Center (2020)</p>
-<ul class="detail">
-	<li>Researched and ideated on the gamification of the shoulder pulley exercise for elderly rehabilitation</li>
-	<li>Prototyped with Arduino and Micro:bit</li>
-	<li>Modelled shoulder pulley handles using CAD</li>
-</ul>
-
-<p><b>Publicity Head</b></br>Community Service Club Day (2018)</p>
-<ul class="detail">
-	<li>Led a team of 3 to publicise and design for event</li>
-	<li>Designed t-shirts, tote bag, banner, site decoration</li>
-	<li>Managed social media accounts (Facebook & Instagram)</li>
-</ul>
-
-<h2 id="skills">Skills</h2>
-	<p><b>UI/UX, Motion design, Graphic design, Layout design, Video Editing</b></br>Software: Adobe Photoshop, Illustrator, After Effects, XD, InDesign, Premiere Pro, Figma</p>
-<p><b>Front-end development</b></br>HTML, CSS, JavaScript</p>
-<p><b>3D CAD and Rendering</b><br>Software: Rhinoceros 3D, Keyshot</p>
-
-	<p>Certificate in Human-Computer Interaction | edX | Georgia Institute of Technology</br>Proficient in English and Chinese</p>
-<h2 id="achieve">Achievements</h2>
-<p>Golden Pin Concept Design Award (2020)</br>Dean’s List, NUS School of Design & Environment (2019/2020)</p>
-</div>
-</div>
+	</div>
 </body>
 <script>
-function showDetails() {
-var button = document.getElementById("button");	
-var details = document.getElementsByClassName("detail");
-if(button.innerHTML == "Show Details"){
-	for (let i = 0; i < details.length; i++) {
-		details[i].style.display = "block";
+	function showDetails() {
+		var button = document.getElementById("button");
+		var details = document.getElementsByClassName("detail");
+		if (button.innerHTML == "Show Details") {
+			for (let i = 0; i < details.length; i++) {
+				details[i].style.display = "block";
+			}
+			button.innerHTML = "Hide Details";
+		} else {
+			for (let i = 0; i < details.length; i++) {
+				details[i].style.display = "none";
+				button.innerHTML = "Show Details";
+			}
+		}
 	}
-	button.innerHTML = "Hide Details";
-} else {
-	for (let i = 0; i < details.length; i++) {
-		details[i].style.display = "none";
-		button.innerHTML = "Show Details";
-} 
- }
-}
 </script>
+
 </html>

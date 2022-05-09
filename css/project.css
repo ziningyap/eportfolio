@@ -9,6 +9,19 @@ margin: 0;
 padding: 0;
 }
 
+footer {
+	position: fixed;
+	right: 5%;
+	top: 5%;
+	width: 100%;
+	text-align: right;
+	color: var(--clr-golden);
+}
+
+footer a {
+	color: var(--clr-golden);
+}
+
 @media only screen and (max-width: 800px) {
 	div.my-contribution{
 		width: 100%;
