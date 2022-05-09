@@ -116,21 +116,23 @@ h1 {
   }
   
   .topnav a:hover {
-		color:var(--clr-golden);
 	  transition-duration: 0.3s;
 	  transition-timing-function: ease-in-out;
+	  text-decoration: underline;
   }
   
   .topnav a.active {
 	  color:var(--clr-golden);
-	  border-bottom: 3px solid var(--clr-golden);}
+	  text-decoration: none;
+	  
+	}
   
   .topnav .icon {
 	display: none;
   }
   
   @media screen and (max-width: 600px) {
-	.topnav a:not(:first-child) {display: none;}
+	.topnav a {display: none;}
 	.topnav a.icon {
 	  float: right;
 	  display: block;
