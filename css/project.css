@@ -314,3 +314,7 @@ p {
 .keyword {
 	padding-right: 1rem;
 }
+
+iframe {
+	width: 90%;
+}
