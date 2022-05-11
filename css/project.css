@@ -195,7 +195,7 @@ p {
 	}
 
 	iframe {
-		height: 300px;
+		height: 400px;
 	}
 
 	iframe.proj-vid {
@@ -335,5 +335,5 @@ p {
 }
 
 iframe {
-	width: 80%;
+	width: min(95%, 900px);
 }
