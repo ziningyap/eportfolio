@@ -7,11 +7,6 @@ caption = document.querySelector("#caption");
 back = document.querySelector("#left");
 next = document.querySelector("#right");
 
-
-// images = ["url('https://i.ibb.co/zfsQvSD/track-5.jpg')", "url('https://i.ibb.co/597Szt8/track-1.jpg')","url('https://i.ibb.co/hHLZmK3/track-2.png')","url('https://i.ibb.co/DrHGz5D/track-3.png')", "url('https://i.ibb.co/LkRnwHt/track-data.png')"]
-
-// captions = ["DIY Tracking Device", "Set up of shoulder pulley exercise", "How the markers get detected for the game", "Game score to motivate seniors in their exercise", "Data visualisation for the Occupational Therapists to track seniors' performance"]
-
 var totalImgs = images.length;
 var newIndex;
 var currentIndex = 0;
