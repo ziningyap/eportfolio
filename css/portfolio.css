@@ -7,17 +7,39 @@ display: inline-block;
 
 .about-me {
     margin-left: 5%;
+    animation-name: fadeIn;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 .portrait {
     display: inline-block;
     width: min(80%, 300px);
     margin: 2% 5%;
+    animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0%;
+		margin-top: 3%;
+	}
+
+	100% {
+		opacity: 100%;
+		margin-top: 2%;
+	}
 }
 
 .portfolio-gallery{
     width: 100%;
     margin-left: 2%;
+    margin-top: 2%;
+    animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-timing-function: ease;
 }
 
 .portfolio-gallery h1{
