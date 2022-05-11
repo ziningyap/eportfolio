@@ -19,8 +19,8 @@ window.onload = () => {
       window.open("https://ziningyap.com/spacepiggy", "_self");
     });
     
-      document.querySelector("#tui").addEventListener("click", () => {
-      window.open("https://ziningyap.com/tui-museum", "_self");
+      document.querySelector("#create").addEventListener("click", () => {
+      window.open("https://ziningyap.com/create", "_self");
     });
   
   };
