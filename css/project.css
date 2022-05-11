@@ -198,9 +198,6 @@ p {
 		height: 400px;
 	}
 
-	iframe.proj-vid {
-		margin-left: 0%;
-	}
 }
 
 @media screen and (max-width: 700px) {
@@ -238,7 +235,8 @@ p {
 }
 
 .proj-content {
-	width: min(90%, 600px);
+	width: min(90%, 650px);
+	margin-right: 5%;
 	padding-right: 5%;
 	display: block;
 	float: left;
@@ -265,7 +263,7 @@ p {
 .proj-vid {
 	width: min(95%, 600px);
 	height: 400px;
-	margin: 5%;
+	margin: 5% 0;
 	display: inline-block;
 }
 
@@ -336,4 +334,5 @@ p {
 
 iframe {
 	width: min(95%, 900px);
+	height: 400px;
 }
