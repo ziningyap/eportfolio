@@ -247,13 +247,19 @@ p {
 .proj-collab {
 	color: #8F8F8F;
 	width: min(80%, 500px);
+	margin: 0;
 }
 
 .proj-vid {
 	width: min(95%, 600px);
 	height: 400px;
-	margin-top: 5%;
+	margin: 5%;
 	display: inline-block;
+}
+
+.proj-goals {
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--clr-golden);
 }
 
 .gallery-container {
@@ -287,14 +293,14 @@ p {
 .add-info {
 	width: 80%;
 	display: block;
-	margin-top: 8%;
-	border-top: 1px solid var(--clr-golden);
+	margin-top: 2%;
 }
 
 .my-contribution,
 .skills-used {
 	width: 330px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 
