@@ -5,7 +5,6 @@ window.onload = () => {
     
       document.querySelector("#track").addEventListener("click", () => {
       window.open("https://ziningyap.com/track", "_self");
-      console.log("track");
     });
     
       document.querySelector("#ifu").addEventListener("click", () => {
