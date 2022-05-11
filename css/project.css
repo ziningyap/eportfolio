@@ -193,6 +193,14 @@ p {
 	div#img {
 		height: 300px;
 	}
+
+	iframe {
+		height: 300px;
+	}
+
+	iframe.proj-vid {
+		margin-left: 0%;
+	}
 }
 
 @media screen and (max-width: 700px) {
