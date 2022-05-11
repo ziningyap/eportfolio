@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRACK</title>
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&family=Open+Sans:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<h1 id="name">ZINING YAP</h1>
+		<a href="resume.html">Resume</a>
+		<a class="active" href="portfolio.html">Portfolio</a>
+		<a href="javascript:void(0);" class="icon" onclick="showMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+		</ul>
+	</div>
+	<div class="main">
+
+		<div class="gallery-container">
+			<div id="img">
+			</div>
+			<div class="caption">
+				<span id="left" class="noselect"><svg xmlns="http://www.w3.org/2000/svg"
+						enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+						<rect fill="none" height="24" width="24" />
+						<path d="M9,19l1.41-1.41L5.83,13H22V11H5.83l4.59-4.59L9,5l-7,7L9,19z" /></svg></span>
+				<span id="right" class="noselect"><svg xmlns="http://www.w3.org/2000/svg"
+						enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+						<rect fill="none" height="24" width="24" />
+						<path d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z" /></svg></span>
+				<span id="caption" class="noselect">DIY Tracking Device</span>
+
+			</div>
+		</div>
+
+		<div class="proj-container">
+			<div class="proj-content">
+				<h1 class="proj-title">Instructions for use</h1>
+				<h3 class="proj-liner">system for Trulicity</h3>
+				<p class="proj-des">Tapping on a dependable means of tracking motion via computer vision, TRACK is
+					an accessible and low-cost DIY tracking device for Occupational Therapy. It aims to assist the
+					Occupational Therapists (OTs) in monitoring the elderly’s performance and progress while also
+					improving the elderly’s rehabilitation experience.</p>
+				<h3>Key Words</h3>
+				<ul>
+					<li>Interaction Design</li>
+					<li>Gamification</li>
+					<li>Computer vision</li>
+				</ul>
+				<h3>Target Audience</h3>
+				<ul>
+					<li>Elderly and Occupational Therapists in Rehabilitation Centres</li>
+				</ul>
+				<h3>Goals</h3>
+				<ul>
+					<li>Engage and motivate elderly in completing their exercise by gamifying it</li>
+					<li>Help Occupational Therapists to make more accurate prescriptions by tracking the elderly’s
+						performance and progress</li>
+				</ul>
+
+			</div>
+			<iframe class="proj-vid" src="https://www.youtube.com/embed/xaPK3u6Ol1U" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<div class="add-info">
+			<p class="proj-collab"><i>Designed with Pang Shi Jie and Elicia Low</i></p>
+			<div class="my-contribution">
+				<h3>What I did</h3>
+				<ul>
+					<li>Game coding and Data Plotting</li>
+					<li>Prototyping and Construction</li>
+					<li>User Testing</li>
+					<li>Animation & Video editing</li>
+				</ul>
+			</div>
+			<div class="skills-used">
+				<h3>Skills used</h3>
+				<ul>
+					<li>Coding: HTML, CSS, JavaScript</li>
+					<li>Software: Adobe Illustrator, After Effects, Premiere Pro</li>
+				</ul>
+			</div>
+		</div>
+		<div class="process">
+			<h3>Explorations and design process</h3>
+			<iframe
+				src="https://docs.google.com/presentation/d/e/2PACX-1vTaS-6lykasCdmK4gx2FM6XAqYD_ny8gn5TeWQAKbMXQ1FYRZQRxa8e1DFlhOt4tEWU10Nhv3O-HbzR/embed?start=false&loop=false&delayms=5000"
+				frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+				webkitallowfullscreen="true"></iframe>
+		</div>
+	</div>
+	<script>
+		document.querySelector("#img").style.backgroundImage = "url('img/track-5.jpg')";
+
+		images = ["url('img/track-5.jpg')", "url('img/track-1.jpg')",
+			"url('img/track-2.png')", "url('img/track-3.png')",
+			"url('img/track-data.png')"
+		]
+
+		captions = ["DIY Tracking Device", "Set up of shoulder pulley exercise", "How the markers get detected for the game",
+			"Game score to motivate seniors in their exercise",
+			"Data visualisation for the Occupational Therapists to track seniors' performance"
+		]
+	</script>
+	<script type="text/javascript" src="project.js"></script>
+</body>
+
+</html>
