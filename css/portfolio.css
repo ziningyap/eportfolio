@@ -1,13 +1,17 @@
-.about-me, .about-me h1 {
-width: min(100%, 500px);
+.about-me, .about-me h1, .about-me p {
+width: min(90%, 600px);
 font-family: 'Syne', sans-serif;
 color: var(--clr-green);
 display: inline-block;
 }
 
+.about-me {
+    margin-left: 5%;
+}
+
 .portrait {
     display: inline-block;
-    width: 30%;
+    width: min(80%, 300px);
     margin: 2% 5%;
 }
 
@@ -18,6 +22,7 @@ display: inline-block;
 
 .portfolio-gallery h1{
     font-size: 2rem;
+    margin-left: 5%;
 }
 
 .proj-card {
