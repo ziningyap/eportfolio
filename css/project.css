@@ -189,6 +189,10 @@ p {
 	.hideName {
 		display: none;
 	}
+
+	div#img {
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 700px) {
