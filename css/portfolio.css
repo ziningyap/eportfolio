@@ -42,10 +42,6 @@ display: inline-block;
 	animation-timing-function: ease;
 }
 
-.portfolio-gallery h1{
-    font-size: 2rem;
-}
-
 .proj-card {
     width: min(80%, 430px);
     height: 300px;
