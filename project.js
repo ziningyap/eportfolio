@@ -1,6 +1,7 @@
 var img;
 var back;
 var next;
+var click = false;
 
 img = document.querySelector("#img");
 caption = document.querySelector("#caption");
@@ -12,29 +13,37 @@ var newIndex;
 var currentIndex = 0;
 
 back.addEventListener("click", () => {
-currentIndex -= 1;
-newIndex = Math.abs((totalImgs + currentIndex) % totalImgs);
-console.log(newIndex);
-img.style.backgroundImage = images[newIndex];
-caption.innerHTML = captions[newIndex];
-  });
+  clearInterval(slideShow);
+  currentIndex -= 1;
+  newIndex = Math.abs((totalImgs + currentIndex) % totalImgs);
+  console.log(newIndex);
+  img.style.backgroundImage = images[newIndex];
+  caption.innerHTML = captions[newIndex];
+});
 
 next.addEventListener("click", () => {
-currentIndex += 1;
-newIndex = (totalImgs + currentIndex) % totalImgs;
-console.log(newIndex);
-img.style.backgroundImage = images[newIndex];
-caption.innerHTML = captions[newIndex];
-  });
+  clearInterval(slideShow);
+  nextImg();
+});
 
+let nextImg = () => {
+  currentIndex += 1;
+  newIndex = (totalImgs + currentIndex) % totalImgs;
+  console.log(newIndex);
+  img.style.backgroundImage = images[newIndex];
+  caption.innerHTML = captions[newIndex];
+}
+
+let slideShow = setInterval(nextImg,
+  10000);
 
 function showMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-      document.querySelector("#name").className += "hideName"
-    } else {
-      x.className = "topnav";
-      document.querySelector("#name").className = ""
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    document.querySelector("#name").className += "hideName"
+  } else {
+    x.className = "topnav";
+    document.querySelector("#name").className = ""
   }
+}
