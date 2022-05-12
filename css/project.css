@@ -228,6 +228,21 @@ p {
 	margin-left: 5%;
 	margin-top: 10px;
 	text-align: left;
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0%;
+		margin-top: 25px;
+	}
+
+	100% {
+		opacity: 100%;
+		margin-top: 10px;
+	}
 }
 
 .proj-container {
