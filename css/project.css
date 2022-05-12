@@ -24,6 +24,15 @@ body {
 	cursor: pointer;
 }
 
+#email {
+	text-decoration: none;
+	color: var(--clr-golden);
+}
+
+#email:hover {
+	text-decoration: underline;	
+}
+
 
 
 @media only screen and (max-width: 800px) {
