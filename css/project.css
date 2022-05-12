@@ -69,6 +69,10 @@ p {
 	width: 80%;
 	padding-left: 10%;
 	padding-top: 3%;
+	margin:0;
+	animation-name: resumeFade;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
 }
 
 #resume h1 {
@@ -242,6 +246,18 @@ p {
 	100% {
 		opacity: 100%;
 		margin-top: 10px;
+	}
+}
+
+@keyframes resumeFade {
+	0% {
+		opacity: 0%;
+		margin-top: 10px;
+	}
+
+	100% {
+		opacity: 100%;
+		margin-top: 0px;
 	}
 }
 
