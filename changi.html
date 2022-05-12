@@ -18,7 +18,7 @@
 	<div class="topnav" id="myTopnav">
 		<h1 id="name">ZINING YAP</h1>
 		<a href="resume.html">Resume</a>
-		<a class="active" href="portfolio.html">Portfolio</a>
+		<a href="index.html">Portfolio</a>
 		<a href="javascript:void(0);" class="icon" onclick="showMenu()">
 			<i class="fa fa-bars"></i>
 		</a>
@@ -86,6 +86,10 @@
 			<h3>Try it out: <a href="https://ziningyap.github.io/changi-passenger-traffic/" target="_blank">https://ziningyap.com/changi-passenger-traffic/</a></h3>
 			<p><i>Note: The website is only compatible for desktop viewing</i></p>
 		</div>
+		<div class="next-proj">
+			<h3 id="next-proj-btn">Check out another project &#8594;</h3>
+			<br>
+			</div>
 	</div>
 	<script>
 		document.querySelector("#img").style.backgroundImage = "url('img/changi-1.jpg')";
@@ -99,6 +103,10 @@
 			"How passenger traffic has grown within the regions",
 			"Singapore's tourism growth in relation to Changi's passenger traffic growth", "Changi's strategies to boost passenger traffic", "Improved accessibility to flights as a contributor to passenger traffic growth", "Enhanced connectivity through more city links as a contributor to higher passenger traffic"
 		]
+
+		document.querySelector("#next-proj-btn").addEventListener("click", () => {
+			window.open("https://ziningyap.com/spacepiggy", "_self");
+});
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>
