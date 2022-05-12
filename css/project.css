@@ -266,6 +266,24 @@ p {
 	to {opacity: 1}
   } */
 
+
+  .next-proj {
+	  width: 95%;
+	  text-align: right;
+	  display: block;
+  }
+
+  #next-proj-btn, #all-proj-btn {
+	  cursor: pointer;
+	  color: black;
+	  transition: 0.5s ease;
+  }
+
+  #next-proj-btn:hover, #all-proj-btn:hover {
+	color: var(--clr-golden);
+}
+
+
 .proj-container {
 	margin-top: 2%;
 }

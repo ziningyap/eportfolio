@@ -98,6 +98,10 @@
 			<h3>Check out the animated instructions</h3>
 			<iframe src="https://www.youtube.com/embed/videoseries?list=PLy14nMyjtojbdZ4dMwzH0AeKmnY9UyBIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
+		<div class="next-proj">
+			<h3 id="next-proj-btn">Check out another project &#8594;</h3>
+			<br>
+			</div>
 	</div>
 	<script>
 		document.querySelector("#img").style.backgroundImage = "url('img/IFU-1.jpg')";
@@ -111,6 +115,10 @@
 			"Key information is display on the same spread for easy reference",
 			"Animated instructions with audio guide to engage and comfort users", "Instruction sheet and online guide can be interchangeably used", "Online portal to track users' experience and progress"
 		]
+
+		document.querySelector("#next-proj-btn").addEventListener("click", () => {
+			window.open("https://ziningyap.com/changi", "_self");
+});
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>

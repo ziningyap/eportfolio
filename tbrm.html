@@ -18,14 +18,13 @@
 	<div class="topnav" id="myTopnav">
 		<h1 id="name">ZINING YAP</h1>
 		<a href="resume.html">Resume</a>
-		<a class="active" href="portfolio.html">Portfolio</a>
+		<a href="portfolio.html">Portfolio</a>
 		<a href="javascript:void(0);" class="icon" onclick="showMenu()">
 			<i class="fa fa-bars"></i>
 		</a>
 		</ul>
 	</div>
 	<div class="main">
-
 		<div class="gallery-container">
 			<div id="img">
 			</div>
@@ -116,6 +115,10 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
 		</div>
+		<div class="next-proj">
+			<h3 id="next-proj-btn">Check out another project &#8594;</h3>
+			<br>
+			</div>
 	</div>
 	<script>
 		document.querySelector("#img").style.backgroundImage = "url('img/tbrm-1.jpg')";
@@ -133,6 +136,10 @@
 			"General meeting characteristics that users think the transition types are best suited for",
 			"Key factors that users would consider when deciding on the transition to use for their meeting"
 		]
+
+		document.querySelector("#next-proj-btn").addEventListener("click", () => {
+			window.open("https://ziningyap.com/track", "_self");
+});
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>
