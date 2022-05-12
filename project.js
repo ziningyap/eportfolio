@@ -47,3 +47,7 @@ function showMenu() {
     document.querySelector("#name").className = ""
   }
 }
+
+document.querySelector("#name").addEventListener("click", () => {
+  window.open("https://ziningyap.com/", "_self");
+});
