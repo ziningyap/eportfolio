@@ -15,6 +15,8 @@ var imgUrl;
 
 var preloaded = 0;
 
+let slideShow;
+
 function preLoader(e) {
   for (var i = 0; i < images.length; i++) {
     var tempImage = new Image();
@@ -29,7 +31,7 @@ function progress() {
 
   if (preloaded == images.length) {
     document.querySelector("#img").style.backgroundImage = "url('" + images[0] + "')";
-    let slideShow = setInterval(nextImg, 10000);
+    slideShow = setInterval(nextImg, 10000);
   } else {
     document.querySelector("#img").style.backgroundImage = "url('img/loading.gif')";
   }
