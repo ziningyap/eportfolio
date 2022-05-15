@@ -99,14 +99,8 @@
 	</div>
 </main>
 	<script>
-		document.querySelector("#img").style.backgroundImage = "url('img/piggy-1.jpg')";
-
-		images = ["url('img/piggy-1.jpg')", "url('img/piggy-2.jpg')",
-			"url('img/piggy-3.jpg')", "url('img/piggy-4.gif')",
-			"url('img/piggy-5.jpg')"
-		]
-
-		captions = ["An inanimate piggy bank comes to life through the pepper’s ghost effect", "Space piggy’s unpredictability drives endless excitement and curiosity in children",
+		captions = ["An inanimate piggy bank comes to life through the pepper’s ghost effect",
+			"Space piggy’s unpredictability drives endless excitement and curiosity in children",
 			"With every coin dropped, a different object is given to maggie the piggy to help her attain her goal of reaching the moon",
 			"The setup behind the pepper's ghost effect",
 			"How the product works"
@@ -114,7 +108,30 @@
 
 		document.querySelector("#next-proj-btn").addEventListener("click", () => {
 			window.open("https://ziningyap.com/create", "_self");
-});
+		});
+
+		var preloaded = 0;
+		var images = new Array("img/piggy-1.jpg", "img/piggy-2.jpg",
+			"img/piggy-3.jpg", "img/piggy-4.gif",
+			"img/piggy-5.jpg");
+
+		function preLoader(e) {
+			for (var i = 0; i < images.length; i++) {
+				var tempImage = new Image();
+
+				tempImage.addEventListener("load", progress, true);
+				tempImage.src = images[i];
+			}
+		}
+
+		function progress() {
+			preloaded++;
+
+			if (preloaded == images.length) {
+				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
+			}
+		}
+		this.addEventListener("DOMContentLoaded", preLoader, true);
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>

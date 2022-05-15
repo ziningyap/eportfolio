@@ -11,13 +11,15 @@ next = document.querySelector("#right");
 var totalImgs = images.length;
 var newIndex;
 var currentIndex = 0;
+var imgUrl;
+
 
 back.addEventListener("click", () => {
   clearInterval(slideShow);
   currentIndex -= 1;
   newIndex = Math.abs((totalImgs + currentIndex) % totalImgs);
-  console.log(newIndex);
-  img.style.backgroundImage = images[newIndex];
+  imgUrl = images[newIndex];
+  img.style.backgroundImage = "url('"+imgUrl+"')";
   caption.innerHTML = captions[newIndex];
 });
 
@@ -29,8 +31,8 @@ next.addEventListener("click", () => {
 let nextImg = () => {
   currentIndex += 1;
   newIndex = (totalImgs + currentIndex) % totalImgs;
-  console.log(newIndex);
-  img.style.backgroundImage = images[newIndex];
+  imgUrl = images[newIndex];
+  img.style.backgroundImage = "url('"+imgUrl+"')";
   caption.innerHTML = captions[newIndex];
 }
 
