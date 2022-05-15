@@ -1,27 +1,36 @@
+var selected;
+
 window.onload = () => {
-    document.querySelector("#tbrm").addEventListener("click", () => {
-      window.open("https://ziningyap.com/tbrm", "_self");
-    });
-    
-      document.querySelector("#track").addEventListener("click", () => {
-      window.open("https://ziningyap.com/track", "_self");
-    });
-    
-      document.querySelector("#ifu").addEventListener("click", () => {
-      window.open("https://ziningyap.com/trulicity", "_self");
-    });
-    
-      document.querySelector("#changi").addEventListener("click", () => {
-      window.open("https://ziningyap.com/changi", "_self");
-    });
-    
-      document.querySelector("#piggy").addEventListener("click", () => {
-      window.open("https://ziningyap.com/spacepiggy", "_self");
-    });
-    
-      document.querySelector("#create").addEventListener("click", () => {
-      window.open("https://ziningyap.com/create", "_self");
-    });
+    var projCards = document.getElementsByClassName("proj-card-name");
+
+    for (var i = 0; i < projCards.length; i++) {
+      projCards[i].addEventListener("click", function () {
+        selected = this.id;
+  
+        switch (selected) {
+          case "tbrm":
+            url = "https://ziningyap.com/tbrm";
+            break;
+          case "track":
+            url = "https://ziningyap.com/track";
+            break;
+          case "ifu":
+            url = "https://ziningyap.com/trulicity";
+            break;
+          case "changi":
+            url = "https://ziningyap.com/changi";
+            break;
+          case "piggy":
+            url = "https://ziningyap.com/spacepiggy";
+            break;
+          case "create":
+            url = "https://ziningyap.com/create";
+            break;
+        }
+
+        location.href = url;
+      });
+    }
   
   };
 
