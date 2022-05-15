@@ -110,28 +110,9 @@
 			window.open("https://ziningyap.com/create", "_self");
 		});
 
-		var preloaded = 0;
 		var images = new Array("img/piggy-1.jpg", "img/piggy-2.jpg",
 			"img/piggy-3.jpg", "img/piggy-4.gif",
 			"img/piggy-5.jpg");
-
-		function preLoader(e) {
-			for (var i = 0; i < images.length; i++) {
-				var tempImage = new Image();
-
-				tempImage.addEventListener("load", progress, true);
-				tempImage.src = images[i];
-			}
-		}
-
-		function progress() {
-			preloaded++;
-
-			if (preloaded == images.length) {
-				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
-			}
-		}
-		this.addEventListener("DOMContentLoaded", preLoader, true);
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>

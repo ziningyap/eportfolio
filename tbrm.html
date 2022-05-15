@@ -125,7 +125,6 @@
 		</div>
 	</main>
 	<script>
-
 		captions = ["Ways to transition between remote meetings",
 			"Passive Mental Break: Zone out from previous meeting by literally zoning out",
 			"Active Mental Break: Shift attention away from previous work by engaging with things on-screen",
@@ -138,29 +137,9 @@
 		document.querySelector("#next-proj-btn").addEventListener("click", () => {
 			window.open("https://ziningyap.com/track", "_self");
 		});
-
-		var preloaded = 0;
 		var images = new Array("img/tbrm-1.jpg", "img/tbrm-2.gif",
 			"img/tbrm-3.gif", "img/tbrm-4.gif",
 			"img/tbrm-5.gif", "img/tbrm-6.jpg", "img/tbrm-7.png");
-
-		function preLoader(e) {
-			for (var i = 0; i < images.length; i++) {
-				var tempImage = new Image();
-
-				tempImage.addEventListener("load", progress, true);
-				tempImage.src = images[i];
-			}
-		}
-
-		function progress() {
-			preloaded++;
-
-			if (preloaded == images.length) {
-				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
-			}
-		}
-		this.addEventListener("DOMContentLoaded", preLoader, true);
 	</script>
 	<script type="text/javascript" src="project.js"></script>
 </body>

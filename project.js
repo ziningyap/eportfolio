@@ -13,6 +13,24 @@ var newIndex;
 var currentIndex = 0;
 var imgUrl;
 
+var preloaded = 0;
+		function preLoader(e) {
+			for (var i = 0; i < images.length; i++) {
+				var tempImage = new Image();
+
+				tempImage.addEventListener("load", progress, true);
+				tempImage.src = images[i];
+			}
+		}
+
+		function progress() {
+			preloaded++;
+
+			if (preloaded == images.length) {
+				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
+			}
+		}
+		this.addEventListener("DOMContentLoaded", preLoader, true);
 
 back.addEventListener("click", () => {
   clearInterval(slideShow);
