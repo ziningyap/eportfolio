@@ -55,7 +55,7 @@ body {
 	span#caption{
 		padding-left: 0;
 		display: block;
-		margin-bottom: 5%;
+		margin: 5% 0;
 	}
 
 }
@@ -331,7 +331,7 @@ p {
 
 .proj-collab {
 	color: #8F8F8F;
-	width: min(80%, 500px);
+	width: min(100%, 500px);
 	margin: 0;
 }
 
