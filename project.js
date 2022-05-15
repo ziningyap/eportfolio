@@ -28,7 +28,9 @@ var preloaded = 0;
 
 			if (preloaded == images.length) {
 				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
-			}
+			} else {
+        document.querySelector("#img").style.backgroundImage =  "url('loading.gif')";
+      }
 		}
 		this.addEventListener("DOMContentLoaded", preLoader, true);
 
