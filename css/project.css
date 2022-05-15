@@ -48,6 +48,10 @@ body {
 		display: block;
 	}
 
+	h1.proj-title{
+		font-size: 2.5rem;
+	}
+
 }
 
 h1 {
