@@ -14,32 +14,34 @@ var currentIndex = 0;
 var imgUrl;
 
 var preloaded = 0;
-		function preLoader(e) {
-			for (var i = 0; i < images.length; i++) {
-				var tempImage = new Image();
 
-				tempImage.addEventListener("load", progress, true);
-				tempImage.src = images[i];
-			}
-		}
+function preLoader(e) {
+  for (var i = 0; i < images.length; i++) {
+    var tempImage = new Image();
 
-		function progress() {
-			preloaded++;
+    tempImage.addEventListener("load", progress, true);
+    tempImage.src = images[i];
+  }
+}
 
-			if (preloaded == images.length) {
-				document.querySelector("#img").style.backgroundImage =  "url('"+images[0]+"')";
-			} else {
-        document.querySelector("#img").style.backgroundImage =  "url('loading.gif')";
-      }
-		}
-		this.addEventListener("DOMContentLoaded", preLoader, true);
+function progress() {
+  preloaded++;
+
+  if (preloaded == images.length) {
+    document.querySelector("#img").style.backgroundImage = "url('" + images[0] + "')";
+    let slideShow = setInterval(nextImg, 10000);
+  } else {
+    document.querySelector("#img").style.backgroundImage = "url('img/loading.gif')";
+  }
+}
+this.addEventListener("DOMContentLoaded", preLoader, true);
 
 back.addEventListener("click", () => {
   clearInterval(slideShow);
   currentIndex -= 1;
   newIndex = Math.abs((totalImgs + currentIndex) % totalImgs);
   imgUrl = images[newIndex];
-  img.style.backgroundImage = "url('"+imgUrl+"')";
+  img.style.backgroundImage = "url('" + imgUrl + "')";
   caption.innerHTML = captions[newIndex];
 });
 
@@ -52,12 +54,9 @@ let nextImg = () => {
   currentIndex += 1;
   newIndex = (totalImgs + currentIndex) % totalImgs;
   imgUrl = images[newIndex];
-  img.style.backgroundImage = "url('"+imgUrl+"')";
+  img.style.backgroundImage = "url('" + imgUrl + "')";
   caption.innerHTML = captions[newIndex];
 }
-
-let slideShow = setInterval(nextImg,
-  10000);
 
 function showMenu() {
   var x = document.getElementById("myTopnav");
