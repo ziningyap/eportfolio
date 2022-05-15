@@ -379,6 +379,7 @@ p {
 	background-position: left;
 	background-color: rgb(255, 255, 255);
 	opacity: 1;
+	background-image: url("loading.gif");
 }
 
 .add-info {
