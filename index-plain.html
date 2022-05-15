@@ -15,14 +15,6 @@
 </head>
 
 <body>
-  <section>
-<img src="img/g1.png" class="blob" id="g1" data-speed="7">
-<img src="img/g2.png" class="blob" id="g2" data-speed="9">
-<img src="img/g3.png" class="blob" id="g3" data-speed="5">
-<img src="img/y1.png" class="blob" id="y1" data-speed="9">
-<img src="img/y2.png" class="blob" id="y2" data-speed="5">
-<img src="img/y3.png" class="blob" id="y3" data-speed="2">
-</section>  
   <div class="topnav" id="myTopnav">
     <h1 id="name">ZINING YAP</h1>
     <a href="resume.html">Resume</a>
@@ -34,9 +26,9 @@
   </div>
   <div class="main">
     <div class="portrait">
-      <img width="400px" class="blob" data-speed="1"src="img/zining.gif">
+      <img width="400px" src="img/zining.gif">
     </div>
-    <div class="about-me blob" data-speed="0.5">
+    <div class="about-me">
       <h1>welcome to my portfolio</h1>
       <p>I enjoy working with digital mediums and designing meaningful interactive experiences that weave fun with
         functional! <br><br>My interests in the field of design include UI/UX, Interaction design, Information design, and
@@ -44,7 +36,7 @@
     </div>
 
     <div class="portfolio-gallery">
-      <div class="proj-card" data-speed="1">
+      <div class="proj-card" id="tbrm">
         <div class="proj-card-name">
           <p class="proj-type">Thesis Project</p>
           <h1>Transitions between <br>remote meetings</h1>
@@ -53,8 +45,8 @@
         <div class="proj-thumbnail" style="background-image: url('img/TBRM.png');"></div>
       </div>
 
-      <div class="proj-card" id="track">
-        <div class="proj-card-name">
+      <div class="proj-card">
+        <div class="proj-card-name" id="track">
           <p class="proj-type">Group Project</p>
           <h1>TRACK</h1>
           <p>DIY, Computer Vision, Elderly Rehabilitation</p>
@@ -99,21 +91,7 @@
       </div>
 
     </div>
+    <br><br>
   </div>
   <!-- <script type="text/javascript" src="project.js"></script> -->
-  <script type="text/javascript">
-    document.addEventListener ("mousemove", parallax);
-    function parallax(e) {
-this.querySelectorAll('.blob').forEach(blob => {
-  const speed = blob.getAttribute('data-speed');
-
-  const x= (window.innerWidth - e.pageX*speed)/100
-  const y= (window.innerWidth - e.pageY*speed)/100
-
-  blob.style.transform =  `translateX(${x}px) translateY(${y}px)`
-
-
-})
-    }
-  </script>
 </body>

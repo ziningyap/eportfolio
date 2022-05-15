@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .about-me, .about-me h1, .about-me p {
 width: min(90%, 600px);
 font-family: 'Syne', sans-serif;
@@ -34,13 +38,14 @@ display: inline-block;
 .portfolio-gallery{
     width: 100%;
     margin-top: 2%;
+    padding-left: 2%;
     animation-name: fadeIn;
 	animation-duration: 1.5s;
 	animation-timing-function: ease;
 }
 
 .proj-card {
-    width: min(80%, 430px);
+    width: min(90%, 430px);
     height: 300px;
     cursor: pointer;
     display:inline-block;
@@ -90,3 +95,65 @@ display: inline-block;
     background-size: cover;
     z-index: -999;
 }
+
+
+/* Parallex */
+
+@media only screen and (max-width: 800px) {
+    section {
+        opacity: 0;
+    }
+}
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -999;
+    transition-duration: 0.2s;
+}
+
+
+section img {
+    position: absolute;
+    width: 300px;
+    opacity: 0.2;
+    object-fit: cover;
+    transition-duration: 0.2s;
+}
+
+#g1 {
+    top:30%;
+    left: 0%;
+}
+
+#g2 {
+    top:25%;
+    right: 5%;
+}
+
+#y1 {
+    top:60%;
+    right: 30%;
+}
+
+#y2 {
+    top:90%;
+    left: -5%;
+}
+
+#g3 {
+    top:120%;
+    right: 2%;
+}
+
+#y3 {
+    top:130%;
+    left: 25%;
+}
+
+
+
+
