@@ -37,7 +37,7 @@ display: inline-block;
 
 .portfolio-gallery{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5%;
     padding-left: 2%;
     animation-name: fadeIn;
 	animation-duration: 1.5s;
