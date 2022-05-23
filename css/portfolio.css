@@ -16,6 +16,25 @@ display: inline-block;
 	animation-timing-function: ease;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 40;
+  vertical-align: text-bottom;
+}
+
+#email {
+	text-decoration: none;
+	color: var(--clr-green);
+    padding: 5px;
+}
+
+#email:hover {
+	color: var(--clr-golden);
+}
+
 .portrait {
     display: inline-block;
     width: min(80%, 300px);
